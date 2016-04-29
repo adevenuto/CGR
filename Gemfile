@@ -23,7 +23,8 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
-
+# speeds up load times by serving assets more efficiently, and allows you to see errors in Heroku logs
+gem 'rails_12factor', group: :production
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

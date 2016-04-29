@@ -1,1 +1,8 @@
 <h1>Courses root</h1>
+
+<% @courses.each do |course| %>
+  <h1><%= course.name %></h1>
+  <p><%= course.address %></p>
+  <p><%= course.location %></p>
+  <hr>
+<% end %>

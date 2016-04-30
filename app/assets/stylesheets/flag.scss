@@ -1,0 +1,91 @@
+#header-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 600px;
+  width: 100%;
+  background: url('bannerBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner {
+  background: #61EDFF;
+  position: relative;
+}
+#banner-top {
+  height: 45px;
+  top: 24px;
+}
+#banner-middle {
+  height: 71px;
+  position: relative;
+  top: 50px;
+}
+#banner-bottom {
+  height: 45px;
+  top: 56px;
+}
+.grid-guides {
+  height: inherit;
+  float: left;
+}
+.outer {
+  width: 15%;
+}
+.inner {
+  width: 70%;
+}
+.outer-sm {
+  width: 17%;
+  text-align: center;
+}
+.inner-sm {
+  width: 32%;
+  text-align: center;
+}
+.left {
+  text-align: right;
+}
+.right {
+  text-align: left;
+}
+.star {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+#illinois {
+  max-height: 200px;
+  position: relative;
+  z-index: 1;
+  top: -64px;
+}
+
+@media (max-width: 630px) {
+  #illinois {
+    max-height: 100px;
+    top: -32px;
+  }
+  #banner-top {
+    height: 20px;
+    top: 24px;
+  }
+  #banner-middle {
+    height: 38px;
+    position: relative;
+    top: 24px;
+  }
+  #banner-bottom {
+    height: 20px;
+    top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-middle {
+    height: 85px;
+  }
+  #illinois {
+    max-height: 215px;
+  }
+}

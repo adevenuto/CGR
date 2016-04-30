@@ -1,8 +1,10 @@
-<h1>Courses root</h1>
+<h1>Courses page</h1>
 
 <% @courses.each do |course| %>
   <h1><%= course.name %></h1>
   <p><%= course.address %></p>
   <p><%= course.location %></p>
+  <br>
+  <%= link_to 'details', course_path(course)  %>
   <hr>
 <% end %>

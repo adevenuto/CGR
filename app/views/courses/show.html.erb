@@ -1,0 +1,8 @@
+<h1>Course show page</h1>
+
+<%= @course.name %><br>
+<%= @course.address %><br>
+<%= @course.location %><br>
+
+<%= link_to 'Edit', edit_course_path(@course) %>
+<%= link_to 'Delete', course_path(@course), method: :delete, data: {confirm: "Are you sure?"} %>

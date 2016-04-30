@@ -1,0 +1,107 @@
+.nav {
+  border-top: 1px solid #F7F9F9;
+  border-bottom: 1px solid #F7F9F9;
+  padding: 5px;
+  position: relative;
+  top: 157%;
+  background: rgba(0,0,0,.6);
+  text-align: center;
+  p {
+    color: #fff;
+    font-size: 3em;
+    margin: 0;
+  }
+}
+.cta {
+  height: 200px;
+  background: rgba(151, 152, 152, 0.56);
+  margin: 0 1.66%;
+  position: relative;
+  bottom: 154px;
+}
+.cta-tall {
+  height: 220px;
+  position: relative;
+  bottom: 174px;
+  transition: all 200ms ease-in-out;
+}
+.col-sm-4 {
+  width: 30% !important;
+}
+
+///////////////////// RESPONSIVE ////////////////////////
+////////////////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  #banner-middle {
+    height: 85px;
+  }
+  #illinois {
+    max-height: 215px;
+  }
+}
+@media (max-width: 767px) {
+  .cta {
+    margin: 1.66%;
+    left: 50%;
+    margin-left: -35%;
+  }
+  .col-sm-4 {
+    width: 70% !important;
+  }
+  .cta-tall {
+    height: 200px;
+    position: relative;
+    bottom: 154px;
+  }
+}
+@media (max-width: 630px) {
+  #illinois {
+    max-height: 100px;
+    top: -32px;
+  }
+  #banner-top {
+    height: 20px;
+    top: 24px;
+  }
+  #banner-middle {
+    height: 38px;
+    position: relative;
+    top: 24px;
+  }
+  #banner-bottom {
+    height: 20px;
+    top: 28px;
+  }
+  .nav p {
+    font-size: 2.3em;
+  }
+  #header-container {
+    height: 413px;
+  }
+}
+@media (max-width: 290px) {
+  .nav p {
+    font-size: 1.4em;
+  }
+  #illinois {
+    max-height: 67px;
+    top: -21px;
+  }
+  #banner-top {
+    height: 15px;
+    top: 24px;
+  }
+  #banner-middle {
+    height: 23px;
+    position: relative;
+    top: 18px;
+  }
+  #banner-bottom {
+    height: 15px;
+    top: 22px;
+  }
+  .nav p {
+    font-size: 1.5em;
+  }
+}

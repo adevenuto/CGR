@@ -61,31 +61,3 @@
   z-index: 1;
   top: -64px;
 }
-
-@media (max-width: 630px) {
-  #illinois {
-    max-height: 100px;
-    top: -32px;
-  }
-  #banner-top {
-    height: 20px;
-    top: 24px;
-  }
-  #banner-middle {
-    height: 38px;
-    position: relative;
-    top: 24px;
-  }
-  #banner-bottom {
-    height: 20px;
-    top: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  #banner-middle {
-    height: 85px;
-  }
-  #illinois {
-    max-height: 215px;
-  }
-}

@@ -14,6 +14,10 @@
     <div class="banner" id="banner-bottom">
       <div class="nav">
         <p>Chicago Golf Review</p>
+        <%= link_to 'Courses', courses_path %>
+        <%= link_to 'Sign in', new_user_session_path %>
+        <%= link_to 'Sign up', new_user_registration_path %>
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
       </div>
     </div>
   </div>

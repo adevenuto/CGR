@@ -2,10 +2,12 @@
 
 <% @courses.each do |course| %>
   <h1><%= course.name %></h1>
+  <p>created about: <%= time_ago_in_words(course.created_at) %> ago</p>
   <p><%= course.address %></p>
   <p><%= course.location %></p>
   <p><%= course.description %></p>
   <br>
-  <%= link_to 'details', course_path(course)  %>
+  <%= link_to 'details', course_path(course) %>
+  <%= link_to 'Create new course', new_course_path %>
   <hr>
 <% end %>

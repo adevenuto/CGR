@@ -1,7 +1,7 @@
 <div id="header-container">
-  <div class="banner" id="banner-top">
-    <div id="banner-middle">
-      <div class="grid-guides outer"></div>
+  <div class="banner" id="banner-top"></div>
+  <div id="banner-middle">
+    <div class="grid-guides outer"></div>
       <div class="grid-guides inner">
         <div class="grid-guides outer-sm left"><img class="star" src="../assets/star.png"></div>
         <div class="grid-guides outer-sm left"><img class="star" src="../assets/star.png"></div>
@@ -9,30 +9,69 @@
         <div class="grid-guides outer-sm right"><img class="star" src="../assets/star.png"></div>
         <div class="grid-guides outer-sm right"><img class="star" src="../assets/star.png"></div>
       </div>
-      <div class="grid-guides outer"../></div>
-    </div>
-    <div class="banner" id="banner-bottom">
-      <div class="nav">
-        <p>Chicago Golf Review</p>
-        <div id="nav-container">
-          <div class="nav-left grid-guides">
-            <div class="nav-left-inner grid-guides"><%= link_to 'About', courses_path, :class => 'nav-link' %></div>
-            <div class="nav-left-inner grid-guides"><%= link_to 'Members', courses_path, :class => 'nav-link' %></div>
-            <div class="nav-left-inner grid-guides"><%= link_to 'Top-rated', courses_path, :class => 'nav-link' %></div>
-          </div>
-          <div class="nav-right grid-guides">
-            <% if !user_signed_in? %>
-              <div class="nav-right-inner grid-guides"></div>
-              <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign in', new_user_session_path, :class => 'nav-link' %></div>
-              <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign up', new_user_registration_path, :class => 'nav-link' %></div>
-            <% else %>
-              <div class="nav-right-inner grid-guides"></div>
-              <div class="nav-right-inner grid-guides"></div>
-              <div class="nav-right-inner grid-guides logout"><%= link_to 'Log out', destroy_user_session_path, method: :delete, :id => "logout-btn" %></div>
-            <% end %>
-          </div>
+    <div class="grid-guides outer"></div>
+  </div>
+  <div class="banner" id="banner-bottom">
+    <div class="nav">
+      <p>Chicago Golf Review</p>
+      <div id="nav-container">
+        <div class="nav-left grid-guides">
+          <div class="nav-left-inner grid-guides"><%= link_to 'About', courses_path, :class => 'nav-link' %></div>
+          <div class="nav-left-inner grid-guides"><%= link_to 'Members', courses_path, :class => 'nav-link' %></div>
+          <div class="nav-left-inner grid-guides"><%= link_to 'Top-rated', courses_path, :class => 'nav-link' %></div>
+        </div>
+        <div class="nav-right grid-guides">
+          <% if !user_signed_in? %>
+            <div class="nav-right-inner grid-guides"></div>
+            <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign in', new_user_session_path, :class => 'nav-link' %></div>
+            <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign up', new_user_registration_path, :class => 'nav-link' %></div>
+          <% else %>
+            <div class="nav-right-inner grid-guides"></div>
+            <div class="nav-right-inner grid-guides"></div>
+            <div class="nav-right-inner grid-guides logout"><%= link_to 'Log out', destroy_user_session_path, method: :delete, :id => "logout-btn" %></div>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

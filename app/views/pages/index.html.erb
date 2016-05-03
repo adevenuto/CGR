@@ -1,22 +1,30 @@
 <%= render "layouts/nav_header" %>
-<div class="col-sm-4 cta cta-tall">
-  <h2>Golf</h2>
-  <br>
-  <p>FIND A COURSE AND GO PLAY IT!</p>
-  <%= link_to 'Courses', courses_path, :class => "btn btn-default" %>
-</div>
-<div class="col-sm-4 cta">
-  <h2>Share</h2>
-  <br>
-  <p>SHARE YOUR GOLFING EXPERIENCE!</p>
-  <%= link_to 'Create', courses_path, :class => "btn btn-default" %>
-</div>
-<div class="col-sm-4 cta cta-tall">
-  <h2>Review</h2>
-  <br>
-  <p>REVIEW COURSES YOU'VE PLAYED!</p>
-  <%= link_to 'Courses', courses_path, :class => "btn btn-default" %>
-</div>
-<section>
 
-</section>
+
+<div id="index-container">
+  <section id="cta-container">
+    <div class="col-sm-4 cta cta-tall">
+      <h2>Golf</h2>
+      <br>
+      <p>FIND A COURSE AND GO PLAY IT!</p>
+      <%= link_to 'Courses', courses_path, :class => "btn btn-default" %>
+    </div>
+    <div class="col-sm-4 cta">
+      <h2>Share</h2>
+      <br>
+      <p>SHARE YOUR GOLFING EXPERIENCE!</p>
+      <%= link_to 'Create', courses_path, :class => "btn btn-default" %>
+    </div>
+    <div class="col-sm-4 cta cta-tall">
+      <h2>Review</h2>
+      <br>
+      <p>REVIEW COURSES YOU'VE PLAYED!</p>
+      <%= link_to 'Courses', courses_path, :class => "btn btn-default" %>
+    </div>
+  </section>
+
+    <article id="description-container">
+      <p><span id="drop-caps">H</span>elp Yourself and help other find the best golf courses in the Chicagoland area. Read ohter players reviews any enjoy the image galleries to find a course thats just right for your game. After your round give back to the community by leaving your own review, and upload any pictures you may have taken during your round.</p>
+    </article>
+
+</div>

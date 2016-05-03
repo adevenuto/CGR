@@ -23,8 +23,8 @@
           <div class="nav-right grid-guides">
             <% if !user_signed_in? %>
               <div class="nav-right-inner grid-guides"></div>
-              <div class="nav-right-inner grid-guides"><%= link_to 'Sign in', new_user_session_path, :class => 'nav-link' %></div>
-              <div class="nav-right-inner grid-guides"><%= link_to 'Sign up', new_user_registration_path, :class => 'nav-link' %></div>
+              <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign in', new_user_session_path, :class => 'nav-link' %></div>
+              <div class="nav-right-inner grid-guides signin-up"><%= link_to 'Sign up', new_user_registration_path, :class => 'nav-link' %></div>
             <% else %>
               <div class="nav-right-inner grid-guides"></div>
               <div class="nav-right-inner grid-guides"></div>

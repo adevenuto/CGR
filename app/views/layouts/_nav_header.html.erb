@@ -16,17 +16,19 @@
         <p>Chicago Golf Review</p>
         <div id="nav-container">
           <div class="nav-left grid-guides">
-            <div class="nav-left-inner grid-guides"><%= link_to 'About', courses_path, :class => 'nav-left-link' %></div>
-            <div class="nav-left-inner grid-guides"><%= link_to 'Members', courses_path, :class => 'nav-left-link' %></div>
-            <div class="nav-left-inner grid-guides"><%= link_to 'Top-rated', courses_path, :class => 'nav-left-link' %></div>
+            <div class="nav-left-inner grid-guides"><%= link_to 'About', courses_path, :class => 'nav-link' %></div>
+            <div class="nav-left-inner grid-guides"><%= link_to 'Members', courses_path, :class => 'nav-link' %></div>
+            <div class="nav-left-inner grid-guides"><%= link_to 'Top-rated', courses_path, :class => 'nav-link' %></div>
           </div>
           <div class="nav-right grid-guides">
             <% if !user_signed_in? %>
-              <div class="nav-right-inner grid-guides"><%= link_to 'Sign in', new_user_session_path %></div>
-              <div class="nav-right-inner grid-guides"><%= link_to 'Sign up', new_user_registration_path %></div>
+              <div class="nav-right-inner grid-guides"></div>
+              <div class="nav-right-inner grid-guides"><%= link_to 'Sign in', new_user_session_path, :class => 'nav-link' %></div>
+              <div class="nav-right-inner grid-guides"><%= link_to 'Sign up', new_user_registration_path, :class => 'nav-link' %></div>
             <% else %>
               <div class="nav-right-inner grid-guides"></div>
-              <div class="nav-right-inner grid-guides"><%= link_to 'Log out', destroy_user_session_path, method: :delete, :id => "logout-btn" %></div>
+              <div class="nav-right-inner grid-guides"></div>
+              <div class="nav-right-inner grid-guides logout"><%= link_to 'Log out', destroy_user_session_path, method: :delete, :id => "logout-btn" %></div>
             <% end %>
           </div>
         </div>

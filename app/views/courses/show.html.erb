@@ -1,10 +1,43 @@
-<h1>Course show page</h1>
-
-<%= @course.name %><br>
+<h1><%= @course.name %></h1><br>
 <%= @course.address %><br>
 <%= @course.location %><br>
 <%= @course.description %><br>
+<%= link_to 'home', root_path, :class => "btn btn-default" %>
+<%= link_to 'Edit', edit_course_path(@course), :class => "btn btn-default" %>
+<%= link_to 'Delete', course_path(@course), method: :delete, data: {confirm: "Are you sure?"}, :class => "btn btn-default" %>
+<%= link_to 'Courses', courses_path, :class => "btn btn-default" %>
+<button type="button" class="btn btn-sm-default" data-toggle="modal" data-target="#reviewModal">
+  Leave a review
+</button>
 
-<%= link_to 'Edit', edit_course_path(@course) %>
-<%= link_to 'Delete', course_path(@course), method: :delete, data: {confirm: "Are you sure?"} %>
-<%= link_to 'Courses', courses_path %>
+<hr>
+
+<h4>Reviews</h4>
+<% @reviews.each do |review| %>
+  <p><%= review.review %></p>
+  <p><%= review.user.email %></p>
+<% end %>
+
+<!-- Modal for reviews -->
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Leave review</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for @review, :url => course_reviews_path(@course) do |f| %>
+        <div class="modal-body">
+          <%= f.input :review %>
+          <%#= f.input :rating, :as => :select, :collection => Comment::RATINGS %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         <%= f.submit "Add Review", :class => 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

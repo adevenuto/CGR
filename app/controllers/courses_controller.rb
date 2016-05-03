@@ -19,7 +19,8 @@ class CoursesController < ApplicationController
   end
 
   def show
-
+    @review = Review.new
+    @reviews = Review.all
   end
 
   def edit

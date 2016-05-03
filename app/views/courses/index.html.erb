@@ -11,3 +11,6 @@
   <%= link_to 'Create new course', new_course_path %>
   <hr>
 <% end %>
+<% if @courses.empty? %>
+<%= link_to 'Create new course', new_course_path %>
+<% end %>

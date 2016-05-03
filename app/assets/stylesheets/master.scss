@@ -1,3 +1,4 @@
+
 .nav {
   border-top: 1px solid #F7F9F9;
   border-bottom: 1px solid #F7F9F9;
@@ -10,6 +11,23 @@
     color: #fff;
     font-size: 3em;
     margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+#nav-right {
+  position: absolute;
+  padding-right: 10px;
+  right: 0;
+  bottom: 5px;
+  a {
+    color: white;
+    margin-right: 16px;
+    font-size: 1.1em;
+  }
+  #logout-btn {
+    color:red;
   }
 }
 .cta {

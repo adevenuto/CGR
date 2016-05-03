@@ -1,3 +1,4 @@
+<%= render "layouts/nav_header" %>
 <h1>Courses page</h1>
 
 <% @courses.each do |course| %>
@@ -7,8 +8,8 @@
   <p><%= course.location %></p>
   <p><%= course.description %></p>
   <br>
-  <%= link_to 'details', course_path(course) %>
-  <%= link_to 'Create new course', new_course_path %>
+  <%= link_to 'details', course_path(course), :class => 'btn btn-default' %>
+  <%= link_to 'Create new course', new_course_path, :class => 'btn btn-success' %>
   <hr>
 <% end %>
 <% if @courses.empty? %>

@@ -1,0 +1,29 @@
+<div id="header-container">
+  <div class="banner" id="banner-top">
+    <div id="banner-middle">
+      <div class="grid-guides outer"></div>
+      <div class="grid-guides inner">
+        <div class="grid-guides outer-sm left"><img class="star" src="../assets/star.png"></div>
+        <div class="grid-guides outer-sm left"><img class="star" src="../assets/star.png"></div>
+        <div class="grid-guides inner-sm"><img id="illinois" src="../assets/Illinois_chicago.png"></div>
+        <div class="grid-guides outer-sm right"><img class="star" src="../assets/star.png"></div>
+        <div class="grid-guides outer-sm right"><img class="star" src="../assets/star.png"></div>
+      </div>
+      <div class="grid-guides outer"../></div>
+    </div>
+    <div class="banner" id="banner-bottom">
+      <div class="nav">
+        <p>Chicago Golf Review</p>
+        <%= link_to 'Courses', courses_path %>
+        <div id="nav-right">
+          <% if !user_signed_in? %>
+            <%= link_to 'Sign in', new_user_session_path %>
+            <%= link_to 'Sign up', new_user_registration_path %>
+          <% else %>
+            <%= link_to 'Log out', destroy_user_session_path, method: :delete, :id => "logout-btn" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

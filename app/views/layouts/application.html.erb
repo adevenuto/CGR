@@ -10,9 +10,11 @@
 <body>
   <% if notice.present? %>
     <p class="alert alert-info"><%= notice %></p>
+    <a href="#" class="close" data-target="alert" data-toggle="alert">&#215;</a>
   <% end %>
   <% if alert.present? %>
     <p class="alert alert-danger"><%= alert %></p>
+    <a href="#" class="close" data-target="alert" data-toggle="alert">&#215;</a>
   <% end %>
   <%= yield %>
 

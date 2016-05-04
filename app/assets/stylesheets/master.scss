@@ -49,6 +49,9 @@ body {
   background: rgba(255, 0, 0, 0.62);
   transition: all 200ms ease-in-out;
 }
+.signin-up {
+  text-align: left;
+}
 .nav-left {
   width: 70%;
 }
@@ -64,10 +67,8 @@ body {
   }
 }
 #cta-container {
-  border: 1px solid #000;
   position: relative;
   height: 250px;
-  top: -161px;
 }
 .cta {
   height: 200px;
@@ -75,7 +76,6 @@ body {
   margin: 0 1.66%;
   padding: 5px;
   position: relative;
-  // bottom: 154px;
   text-align: center;
   border-radius: 5px;
   border: 1px solid #000;
@@ -85,8 +85,8 @@ body {
   p {
     font-size: 1.5em;
     font-weight: 100;
-    color: #61EDFF;
-    text-shadow: 1px 1px #000;
+    color: #B59265;
+    text-shadow: 1px 0px #fff;
   }
   h2 {
     font-size: 2.7em;
@@ -114,7 +114,7 @@ body {
 }
 
 .btn-default {
-  color: #F9F204;
+  color: #BB3F15;
   background-color: rgba(255, 255, 255, 0.65);
   border-color: #fff;
   max-width: 200px;
@@ -123,40 +123,33 @@ body {
   box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.75);
   font-size: 1.3em;x-shadow: 0px 4px 40px -4px rgba(0,0,0,0.75);
 }
-
+#index-container {
+  position: relative;
+  top: -152px;
+}
 #description-container {
   width: 95%;
-  border: 1px solid #000;
   margin: auto;
   position: relative;
-  top: -131px;
-  font-size: 2.4em;
+  font-size: 2.2em;
 }
 #drop-caps {
   font-size: 286%;
-  margin: -27px 13px -18px;
+  margin: -26px 8px -18px;
   float: left;
   font-style: italic;
-  color: #6D6C6C;
+  color: #BB3F15;
 }
 ///////////////////// RESPONSIVE ////////////////////////
 ////////////////////////////////////////////////////////
 
-@media (min-width: 1200px) {
-  #illinois {
-    max-height: 133px;
-    top: -44px;
+@media (max-width: 860px) {
+  #description-container {
+    font-size: 2em;
   }
-  #banner-top {
-    height: 30px;
-  }
-  #banner-bottom {
-    height: 30px;
-    top: 44px;
-  }
-  #banner-middle {
-    height: 45px;
-    top: 37px;
+  #drop-caps {
+    font-size: 286%;
+    margin: -21px 9px -18px;
   }
 }
 @media (max-width: 767px) {
@@ -177,6 +170,13 @@ body {
     position: relative;
     top: 0;
   }
+  #description-container {
+    font-size: 1.8em;
+  }
+  #drop-caps {
+    font-size: 286%;
+    margin: -20px 10px -18px;
+  }
 }
 @media (max-width: 630px) {
   #illinois {
@@ -185,7 +185,7 @@ body {
   }
   #banner-top {
     height: 20px;
-    top: 24px;
+    top: 20px;
   }
   #banner-middle {
     height: 38px;
@@ -214,6 +214,31 @@ body {
   .cta p {
     font-size: 1.4em;
   }
+  #description-container {
+    font-size: 1.4em;
+  }
+  #drop-caps {
+    font-size: 286%;
+    margin: -16px 9px -18px;
+  }
+  #logout-btn {
+    font-size: 1.2em !important;
+  }
+  #logout-btn {
+    font-size: 1em !important;
+  }
+  .signin-up {
+    position: relative;
+    right: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .col-sm-4 {
+    width: 92% !important;
+  }
+  .cta {
+    margin-left: -46%;
+  }
 }
 @media (max-width: 290px) {
   .nav p {
@@ -238,5 +263,8 @@ body {
   }
   .nav p {
     font-size: 1.5em;
+  }
+  #logout-btn {
+    font-size: .8em !important;
   }
 }
